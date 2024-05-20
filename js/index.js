@@ -180,13 +180,13 @@ function seleciona(rootClick) {
 
 
         document.getElementById('fail-game').style.display = 'flex';
-
+        document.getElementById('area-mines').style.display = 'none';
 
 
     }
 
 
-    document.getElementById('area-mines').style.display = 'none';
+ 
     atualizarInfo();
 
 }
