@@ -138,7 +138,10 @@ function isValidaty() {
 
     }
 
-    return true;
+    
+        return true;
+   
+    
 
 }
 
@@ -154,14 +157,19 @@ function seleciona(rootClick) {
 
 
 
+mines[rowClicked][columnClicked].classList.add('animated');
 
+
+        
+   
     if (isValidaty()) {
 
         /*sucess*/
-
+        
         mines[rowClicked][columnClicked].innerHTML = "<img  src='./assets/estrela.svg'>";
         mines[rowClicked][columnClicked].style.backgroundColor = "#002947";
         infos.qtdAcertos += 1;
+ 
         mines[rowClicked][columnClicked].disabled = 'true';
 
         if (infos.qtdAcertos == infos.qtdEstrela) {
@@ -173,7 +181,7 @@ function seleciona(rootClick) {
 
 
         /*bomb*/
-
+  
         mines[rowClicked][columnClicked].innerHTML = "<img  src='./assets/bomba.png'>";
         mines[rowClicked][columnClicked].style.backgroundColor = "#B61717";
         mines[rowClicked][columnClicked].disabled = 'true';
@@ -184,7 +192,6 @@ function seleciona(rootClick) {
 
 
     }
-
 
  
     atualizarInfo();

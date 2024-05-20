@@ -7,6 +7,28 @@ body{
     background-color: #000000;
 }
 
+
+@-webkit-keyframes flip-horizontal-bottom {
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+    100% {
+      -webkit-transform: rotateX(-180deg);
+              transform: rotateX(-180deg);
+    }
+  }
+  @keyframes flip-horizontal-bottom {
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+    100% {
+      -webkit-transform: rotateX(-180deg);
+              transform: rotateX(-180deg);
+    }
+  }
+
 #global{
     display: flex;
     flex-direction: column;
@@ -40,8 +62,14 @@ body{
     align-items: center;
     justify-content: center;
     border:none;
+    cursor: pointer;
+   
 
 }
+.animated {
+    animation: flip-horizontal-bottom 0.5s ease-in-out both; /* Apply the animation */
+  }
+  
 .linha-mines{
     display: flex;
     flex-flow: row nowrap;
