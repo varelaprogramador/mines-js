@@ -1,0 +1,166 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family:"Luckiest Guy", cursive;
+}
+body{
+    background-color: #000000;
+}
+
+#global{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+/**/
+#title{
+    margin-top: 125px;
+    color: white;
+}
+#title h1{
+   font-weight: 400;
+   font-size: 50px;
+
+}
+/**/
+#area-mines{
+    display: none;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 400px;
+    
+}
+.bloco-mines{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #353434;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+
+}
+.linha-mines{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    margin:15px;
+
+
+}
+
+
+#btn-start{
+    background-color: white;
+    width: 450px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+
+#area-infoGame{
+    display: none;
+    margin: 10px;
+    width: 400px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    color: white;
+    font-weight: 400;
+}
+#area-infoGame p{
+    color: rgb(243, 182, 13);
+    font-size: 15px;
+}
+#fail-game{
+    display: none;
+    flex-flow: column wrap;
+    width: 500px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px ;
+    gap:15px;
+    position: absolute;
+    top: 240px;
+    background-color: rgb(165, 7, 7);
+    color: white;
+}
+#btn-fail{
+    background-color: white;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+}
+#area-start{
+    display: flex;
+    width: 400px;
+    flex-flow: row wrap;
+    gap:15px;
+    align-items: center;
+    justify-content: center;
+}
+#qtd-minas{
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 10px;
+}
+#sucess-game{
+    display: none;
+    flex-flow: column wrap;
+    width: 500px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px ;
+    gap:15px;
+    position: absolute;
+    text-align: center;
+    top: 240px;
+    background-color: #095807;
+    color: white;
+}
+#sucess-game h1{
+   font-size: 30px;
+   font-weight: 400;
+}
+#sucess-game p{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    width: 80%;
+ }
+#btn-sucess{
+    background-color: rgb(235, 255, 232);
+    color: #1c551b;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+}
+#btn-social{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    color: #000000;
+
+    font-weight: 700;
+
+    width: 250px;
+    height: 25PX;
+    border: none;
+
+}
+#btn-social a{
+   color: #000000;
+   text-decoration: none;
+}
